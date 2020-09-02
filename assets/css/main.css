@@ -6,6 +6,12 @@
     background-image: url('../img/mobile/bg-siviwembele.png');
     background-repeat: no-repeat;
     background-size:cover;
+    background-color: black;
+    color: #ffffff;
+
+}
+
+#icons a {
     color: #ffffff;
 }
 
@@ -137,7 +143,7 @@
     Content STYLE
 ----------------------------------------------------- */
 .cover h1 {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     font-weight: bolder;
 }
 
@@ -156,7 +162,7 @@
         text-align: left;
         grid-column: 1/1;
         grid-row: 1/3;
-        padding-top: 2rem;
+        padding-top: 8.4rem;
     }
 
     #s1-header .cover {
