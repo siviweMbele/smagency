@@ -2,12 +2,16 @@
     Global STYLE
 ----------------------------------------------------- */
 
-.body{
+.body {
+    
+    background-color: #343434;
+    color: #ffffff;
+}
+
+#main{
     background-image: url('../img/mobile/bg-siviwembele.png');
     background-repeat: no-repeat;
     background-size:contain;
-    background-color: #343434;
-    color: #ffffff;
 }
 
 #icons a {
@@ -156,6 +160,19 @@ body::-webkit-scrollbar {
     font-weight: bolder;
 }
 
+#about-heading{
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+
+#education-section{
+    background-color: #ffffff;
+    color: #343434;
+    margin-top: 7rem;
+    text-align: left;
+    padding-top: 2rem;
+}
+
 @media screen and (max-width:992px){
     #s1-header {
         display: grid;
@@ -198,10 +215,8 @@ body::-webkit-scrollbar {
         height: 25rem;
     }
 
-    #s1-header #projects-section-mobile{
-        grid-column: 1/1;
-        grid-row: 4/4;
-        height: 25rem;
+    #s1-header #project{
+        overflow-x: hidden;
     }
 
     #s1-header #projects-section{
@@ -232,6 +247,35 @@ body::-webkit-scrollbar {
     #s1-header .container{
         padding-left: 0px !important;
         padding-right: 0px !important;
+    }
+
+    #about-body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    #about-body #first-section {
+        text-align: left;
+        grid-column: 1/1;
+        grid-row: 1/4;
+        padding-top: 6rem; 
+    }
+
+    #first-section p{
+        font-size: 22px;
+        line-height: 1.5em;
+    }
+
+    #about-body #focus-section {
+        text-align: left;
+        grid-column: 1/1;
+        grid-row: 2/2;
+        padding-top: 66rem;
+    }
+
+    #about-1{
+        margin-left: 1.5rem;
     }
 }
 
@@ -283,11 +327,9 @@ body::-webkit-scrollbar {
         grid-column: 1/9;
         grid-row: 5/16;
         padding-top: 48%;
-        overflow: hidden;
-
     }
 
-    #s1-header #projects-section-mobile{
+    #s1-header #project{
         display: none;
     }
 
@@ -321,6 +363,18 @@ body::-webkit-scrollbar {
     .col-sm{
         padding-left: 0px !important;
         padding-right: 0px !important;
+    }
+
+    #about-body {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+    }
+
+    #about-body #first-section {
+        text-align: left;
+        grid-column: 1/8;
+        grid-row: 1/16;
     }
 
 }
