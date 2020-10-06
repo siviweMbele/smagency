@@ -431,7 +431,7 @@ body::-webkit-scrollbar-thumb {
     #about-body #focus-section{
         grid-column: 1/9;
         grid-row: 4/16;
-        padding-top: 30%;
+        padding-top: 29%;
         height: 431px;
     }
 
@@ -441,7 +441,7 @@ body::-webkit-scrollbar-thumb {
         height: 1187px;
         background-color: #ffffff;
         color: #343434;
-        margin-top: 6rem;
+        margin-top: 9rem;
         text-align: left;
         padding: 4rem;
         font-size: 25px;
