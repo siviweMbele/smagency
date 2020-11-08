@@ -18,6 +18,10 @@
     background-size:contain;
 }
 
+#services{
+    background-color: #505A73 !important;
+}
+
 
 @media screen and (min-width: 992px) {
     #main{
@@ -55,7 +59,7 @@ body::-webkit-scrollbar-thumb {
 }  
 
 .navbar{
-    position: absolute !important;
+    position: fixed !important;
     top:0  !important;
     z-index: 100000 !important;
     width: 100%;
@@ -168,15 +172,30 @@ body::-webkit-scrollbar-thumb {
     font-weight: bolder;
 }
 
-#about-heading{
+#page-heading{
     margin-top: 1rem;
     text-decoration: underline;
+    font-size: 64px;
 }
 
+#start-project{
+    border-radius: 43px;
+}
 
+#faq-btn{
+    font-weight: bold;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+}
 
 @media screen and (max-width:992px){
      /* HOME PAGE RELATED  */
+    .temp{
+        padding-top: 10rem !important;
+    }
+    
+     #mobile-menu{
+        width: 34px !important;
+    }
     #s1-header {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -214,7 +233,7 @@ body::-webkit-scrollbar-thumb {
     #s1-header #focus-section{
         grid-column: 1/1;
         grid-row: 3/4;
-        padding-top: 2rem;
+        padding-top: 4rem;
         height: 25rem;
     }
 
@@ -239,7 +258,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     #focus-section p{
-        font-size: 25px;
+        font-size: 16px;
         line-height: 2em;
         width: 21rem;
         margin-left: 1rem;
@@ -261,26 +280,30 @@ body::-webkit-scrollbar-thumb {
         text-align: left;
         grid-column: 1/1;
         grid-row: 1/4;
-        padding-top: 6rem; 
+        padding-top: 5rem; 
     }
 
-    #about-heading{
+    #page-heading{
         margin-left: 1rem;
+        font-size: 40px;
     }
 
     #first-section p{
-        font-size: 22px;
+        font-size: 16px;
         line-height: 1.5em;
         width:21rem;
         margin-left: 1rem;
+        margin-top: 1rem;
     }
 
     #about-body #focus-section {
         text-align: left;
         grid-column: 1/1;
         grid-row: 2/2;
-        padding-top: 66rem;
+        padding-top: 56rem;
         width: 21rem;
+        margin-top: 3rem;
+
     }
 
     #about-1{
@@ -294,10 +317,42 @@ body::-webkit-scrollbar-thumb {
     #education-section{
         background-color: #ffffff;
         color: #343434;
-        margin-top: 7rem;
+        margin-top: 5rem;
         text-align: left;
         padding-top: 2rem;
         padding-left: 1rem;
+    }
+
+    #services-body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    #services-body #first-section {
+        text-align: left;
+        grid-column: 1/1;
+        grid-row: 1/4;
+        padding-top: 6rem; 
+    }
+
+    #services-body #focus-section {
+        text-align: left;
+        grid-column: 1/1;
+        grid-row: 2/2;
+        padding-top: 66rem;
+        width: 21rem;
+    }
+
+    #faq-section{
+        background-color: #ffffff;
+        color: #343434;
+        margin-top: 3rem;
+        text-align: left;
+    }
+
+    #service-img{
+        display: none;
     }
 }
 
@@ -377,7 +432,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     #focus-section p{
-        font-size: 25px;
+        font-size: 18px;
         line-height: 2em;
         padding-left: 28%;
         padding-right: 28%;
@@ -409,13 +464,8 @@ body::-webkit-scrollbar-thumb {
         display: none;
     }
 
-    #about-heading{
-        padding-top: 2rem;
-        font-size: 64px;
-    }
-
     #about-body #first-section p{
-        font-size: 25px;
+        font-size: 18px;
         width: 49rem;
         margin-top: 2rem;
     }
@@ -453,6 +503,55 @@ body::-webkit-scrollbar-thumb {
     #education-section h6{
         font-size: 25px;
     }
+
+    /* SERVICES PAGE RELATED  */
+
+    #services-body {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+        
+    }
+
+    #services-body #first-section {
+        text-align: left;
+        grid-column: 1/8;
+        grid-row: 1/16;
+    }
+
+    #services-body #focus-section{
+        grid-column: 1/9;
+        grid-row: 4/16;
+        padding-top: 29%;
+        height: 431px;
+    }
+
+    #services-body #focus-section{
+        grid-column: 1/9;
+        grid-row: 4/16;
+        padding-top: 29%;
+        height: 431px;
+    }
+
+    #work-with-me{
+        padding-top: 8rem;
+        margin-left: 14rem;
+    }
+
+    #work-with-me p{
+        font-size: 18px;
+    }
+
+    #faq-section{
+        background-color: #ffffff;
+        color: #343434;
+        margin-top: 3rem;
+        text-align: left;
+        width: 50rem;
+        margin-left: 30%;
+        margin-bottom: 3rem;
+    }
+
 }
 
 
